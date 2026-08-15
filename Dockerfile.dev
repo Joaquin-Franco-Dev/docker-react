@@ -7,6 +7,7 @@ RUN npm ci
 
 COPY . .
 
-ENV HOST=0.0.0.0
+# Host binding is configured in vite.config.js (server.host).
+EXPOSE 3000
 
 CMD ["npm", "run", "start"]

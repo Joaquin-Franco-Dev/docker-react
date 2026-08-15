@@ -5,8 +5,7 @@ services:
       context: .
       dockerfile: Dockerfile.dev
     environment:
-      HOST: "0.0.0.0"
-      WATCHPACK_POLLING: "true"
+      CHOKIDAR_USEPOLLING: "true"
     ports:
       - "3000:3000"
     volumes:
